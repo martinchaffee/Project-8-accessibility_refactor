@@ -1,0 +1,93 @@
+/* Survey page styles */
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+
+.container{
+  text-align: center;
+}
+.newsletter{
+  text-align: right;
+
+}
+
+/*-----Form Styling--------*/
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+fieldset {
+  padding: 0px 0px;
+  width: 100%;
+  border: none;
+}
+
+legend {
+  display: inline-block;
+  padding: 5px 0px;
+  text-align: center;
+  color: #D64541;
+  text-transform: uppercase;
+
+}
+
+input, label, textarea {
+  margin: 5px;
+  display: inline-block;
+  font-size: 1em;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 2px solid #D64541;
+	font-weight: 400;
+  background-color: #fafbfa;
+}
+
+.survey label {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+select {
+  background-color: #d2d7d3;
+  font-size: .9em;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  background-color: #d2d7d3;
+}
+.newsletter input {
+  margin-right: 0px;
+  background-color: #d2d7d3;
+  font-size: 1em;
+}
+
+.newsletter fieldset{
+  margin-right: 0px;
+}
+
+.newsletter button {
+  align-self: center;
+}
+
+/*---Aria describedby text--*/
+.hint {
+  display: none;
+}
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+}

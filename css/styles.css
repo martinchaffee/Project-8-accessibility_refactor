@@ -1,0 +1,264 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+
+*:focus{
+  outline: 2px solid #D64541;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #03A677;
+  background: #2d2b30;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #d2d7d3;
+}
+
+a:hover {
+  color: #D64541;
+  border-bottom: 1px solid #D64541;
+}
+
+/* Section Styles */
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  background: rgba(45, 43, 48, 0.8);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+  transition: all .5s;
+}
+
+.nav a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+header {
+  text-align: center;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  height: 350px;
+}
+
+header h1 {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 3.2em;
+}
+
+header h3 {
+  color: #781125;
+  font-size: 1.5em;
+}
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+.name{
+  font-weight: 300;
+}
+
+header .name{
+  font-size: 3em;
+}
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #D64541
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  border-top: 4px solid #D64541;
+  clear: both;
+}
+.card:hover {
+  border-color: #E2A50E;
+}
+
+.photo{
+  display: block;
+  width: 200px;
+  height: 0%;
+  margin: 0 auto;
+}
+
+.information{
+  width: 100%;
+  text-align: center;
+  /*display: inline-block;
+  position: absolute;*/
+}
+
+h2{
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #D64541;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 1em;
+  background-color:  #E2A50E;
+  color: white;
+  border: none;
+  font-weight: 200;
+  cursor: pointer;
+  padding: 8px;
+}
+
+button:hover, button:focus {
+  background-color: #D64541;
+}
+
+/* Footer styles */
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  transition: all .5s;
+  border: none;
+}
+
+a.twitter {
+  background-image: url(../img/twitter-32.png);
+}
+
+a.youtube {
+  background-image: url(../img/youtube-32.png);
+}
+
+a.spotify {
+  background-image: url(../img/spotify-32.png);
+}
+
+a.social:hover {
+  opacity: .5;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+
+  .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  header h1 {
+    font-size: 4.4em;
+  }
+
+  header h3 {
+    font-size: 2em;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  .card{
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    width: 80%;
+    max-width: 1000px;
+  }
+
+  .photo{
+    width: 30%;
+    margin: 20px 30px;
+  }
+
+  .information{
+    text-align: left;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}
