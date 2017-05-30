@@ -35,10 +35,9 @@ legend {
 
 }
 
-input, label, textarea {
-  margin: 5px;
+.survey input, .survey label, .survey textarea {
   display: inline-block;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 input:focus,
@@ -49,15 +48,28 @@ select:focus {
   background-color: #fafbfa;
 }
 
+.survey input[type="radio"] {
+  margin: 0;
+  font-size: .75rem;
+}
+
 .survey label {
-  margin-top: 20px;
-  margin-bottom: 0px;
+  margin-right: .2rem;
   text-align: left;
+  font-size: 1rem;
+}
+
+.favorite {
+  margin-bottom: 1rem;
+}
+
+.fav-head {
+  margin-bottom: .25rem;
 }
 
 select {
   background-color: #d2d7d3;
-  font-size: .9em;
+  font-size: 1rem;
 }
 
 textarea {
@@ -65,10 +77,20 @@ textarea {
   resize: none;
   background-color: #d2d7d3;
 }
+
+.newsletter label {
+  font-size: 1rem;
+  margin-right: .4rem;
+}
+
 .newsletter input {
+  margin-bottom: .5rem;
   margin-right: 0px;
   background-color: #d2d7d3;
-  font-size: 1em;
+  font-size: 1rem;
+  width: 50%;
+  border: none;
+
 }
 
 .newsletter fieldset{
@@ -77,6 +99,7 @@ textarea {
 
 .newsletter button {
   align-self: center;
+  margin: 0;
 }
 
 /*---Aria describedby text--*/

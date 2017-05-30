@@ -32,27 +32,31 @@
             <form role="form">
               <fieldset class="survey">
                 <legend>Your favorites</legend>
-                <label aria-describedby="ar-band">Who is your favorite band member:</label><br>
-                <input type="radio" name="res" value="John" id="John"> John<br>
-                <input type="radio" name="res" value="Hazzard" id="Hazzard"> Hazzard<br>
-                <input type="radio" name="res" value="Bob" id="Bob"> Bob<br>
-                <input type="radio" name="res" value="Sally" id="Sally"> Sally<br>
-                <label for="albums">What is your favorite album:</label><br>
-                <select id="albums" name="select" aria-describedby="ar-album">
-                  <option value="A Day Of Old">A Day Of Old</option>
-                  <option value="Diamond Fireworks">Diamond Fireworks</option>
-                  <option value="Enjoy Your Desire">Enjoy Your Desire</option>
-                  <option value="Finding My Shadow">Finding My Shadow</option>
-                  <option value="Heroic Forever">Heroic Forever</option>
-                  <option value="Midnight Fires">Midnight Fires</option>
-                  <option value="Music Of My Life">Music Of My Life</option>
-                  <option value="Party For An Angel">Party For An Angel</option>
-                  <option value="Song For Yesterday">Song For Yesterday</option>
-                  <option value="Street Of The Rider">Street Of The Rider</option>
-                  <option value="This Is For You">This Is For You</option>
-                </select><br>
-
-                <label for="fav-song">What is your favorite song:</label><br>
+                <div class="favorite">
+                  <label class="fav-head" aria-describedby="ar-band">Who is your favorite band member:</label><br>
+                  <label for="John"><input type="radio" name="res" value="John" id="John">John</label>
+                  <label for="Hazzard"><input type="radio" name="res" value="Hazzard" id="Hazzard">Hazzard</label>
+                  <label for="Bob"><input type="radio" name="res" value="Bob" id="Bob">Bob</label>
+                  <label for="Sally"><input type="radio" name="res" value="Sally" id="Sally">Sally</label>
+                </div>
+                <div class="favorite">
+                  <label class="fav-head" for="albums">What is your favorite album:</label><br>
+                  <select id="albums" name="select" aria-describedby="ar-album">
+                    <option value="A Day Of Old">A Day Of Old</option>
+                    <option value="Diamond Fireworks">Diamond Fireworks</option>
+                    <option value="Enjoy Your Desire">Enjoy Your Desire</option>
+                    <option value="Finding My Shadow">Finding My Shadow</option>
+                    <option value="Heroic Forever">Heroic Forever</option>
+                    <option value="Midnight Fires">Midnight Fires</option>
+                    <option value="Music Of My Life">Music Of My Life</option>
+                    <option value="Party For An Angel">Party For An Angel</option>
+                    <option value="Song For Yesterday">Song For Yesterday</option>
+                    <option value="Street Of The Rider">Street Of The Rider</option>
+                    <option value="This Is For You">This Is For You</option>
+                  </select>
+                </div>
+                <div class="favorite">
+                <label class="fav-head" for="fav-song">What is your favorite song:</label><br>
                 <textarea id="fav-song" aria-describedby="ar-song"></textarea>
               </fieldset>
           </div>
@@ -65,9 +69,9 @@
             <div class="container">
                 <fieldset class="newsletter">
                   <legend>Sign up for our newsletter</legend>
-                    <label for="name">Name: <input id="name" type ="text" name="textfield"></label><br>
-                    <label for="email">Email: <input id="email" type ="email" name="textfield"></label><br>
-                    <label for="retype-email">Retype Email: <input id="retype-email" type ="email" name="textfield"></label><br>
+                    <label for="name">Name: </label><input id="name" type ="text" name="textfield"><br>
+                    <label for="email">Email: </label><input id="email" type ="email" name="textfield"><br>
+                    <label for="retype-email">Retype Email: </label><input id="retype-email" type ="email" name="textfield"><br>
                     <button type="submit" aria-describedby="ar-sign-up">Sign Up</button>
                 </fieldset>
               </form>
