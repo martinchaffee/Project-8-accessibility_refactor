@@ -49,7 +49,7 @@ select:focus {
 }
 
 .survey input[type="radio"] {
-  margin: 0;
+  margin-right: .3rem;
   font-size: .75rem;
 }
 
